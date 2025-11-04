@@ -1,0 +1,6 @@
+RSA and AES serve different cryptographic purposes with distinct performance characteristics. RSA is an asymmetric algorithm that uses separate public and private keys, making it ideal for secure key exchange and digital signatures but very slow for encrypting large data. It can only handle small amounts of information efficiently.
+
+AES is a symmetric algorithm that uses the same key for both encryption and decryption, making it extremely fast for bulk data encryption. It's perfect for encrypting files, databases, and network streams but requires secure key distribution.
+
+In practice, most systems use both: RSA securely exchanges an AES key between parties, then AES encrypts the actual data. This combines RSA's secure key distribution with AES's high-speed encryption for optimal performance and security.
+
